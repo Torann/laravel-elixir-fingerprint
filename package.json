@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-fingerprint",
-  "version": "0.3.2",
+  "version": "0.3.2A",
   "description": "Laravel Elixir Fingerprint Extension",
   "main": "index.js",
   "scripts": {
