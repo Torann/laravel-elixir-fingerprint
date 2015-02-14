@@ -24,8 +24,7 @@
   "bugs": {
     "url": "https://github.com/Torann/laravel-elixir-fingerprint/issues"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "gulp-fingerprint": "^0.3.2"
   }
 }
