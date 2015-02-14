@@ -1,0 +1,31 @@
+{
+  "name": "laravel-elixir-fingerprint",
+  "version": "0.3.2",
+  "description": "Laravel Elixir Fingerprint Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "manifest",
+    "version",
+    "fingerprint",
+    "gulp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Torann/laravel-elixir-fingerprint"
+  },
+  "author": "Daniel Stainback",
+  "license": "MIT",
+  "homepage": "https://github.com/Torann/laravel-elixir-fingerprint",
+  "bugs": {
+    "url": "https://github.com/Torann/laravel-elixir-fingerprint/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-fingerprint": "^0.3.2"
+  }
+}
