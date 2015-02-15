@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-fingerprint",
-  "version": "0.3.21",
+  "version": "0.3.22",
   "description": "Laravel Elixir Fingerprint Extension",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,7 @@
     "type": "git",
     "url": "https://github.com/Torann/laravel-elixir-fingerprint"
   },
-  "author": {
-    "name": "Daniel Stainback"
-  },
+  "author": "Daniel Stainback",
   "license": "MIT",
   "homepage": "https://github.com/Torann/laravel-elixir-fingerprint",
   "bugs": {
@@ -28,26 +26,5 @@
   },
   "dependencies": {
     "gulp-fingerprint": "^0.3.2"
-  },
-  "_id": "laravel-elixir-fingerprint@0.3.2",
-  "_shasum": "8af9a2567f163a75c3525df6d7b992d9f4165873",
-  "_from": "laravel-elixir-fingerprint@",
-  "_npmVersion": "1.4.9",
-  "_npmUser": {
-    "name": "torann",
-    "email": "torann@gmail.com"
-  },
-  "maintainers": [
-    {
-      "name": "torann",
-      "email": "torann@gmail.com"
-    }
-  ],
-  "dist": {
-    "shasum": "8af9a2567f163a75c3525df6d7b992d9f4165873",
-    "tarball": "http://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz",
-  "readme": "ERROR: No README data found!"
+  }
 }
