@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './', '-f' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ './' ]
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /Users/daniel/.npm/0ee6c175-.lock
+11 verbose tar pack [ '/Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz',
+11 verbose tar pack   './' ]
+12 verbose tarball /Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+13 verbose folder ./
+14 info prepublish laravel-elixir-fingerprint@0.3.2
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ /Users/daniel/.npm/04cb2bca-tar.lock
+17 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+18 verbose lock tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz /Users/daniel/.npm/e0f2a91d-6253-0-29962149960920215-tmp-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+22 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+23 verbose tar unpack /Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+24 silly lockFile bc8461d3-elixir-fingerprint-0-3-2-package tar:///Users/daniel/.npm/laravel-elixir-fingerprint/0.3.2/package
+25 verbose lock tar:///Users/daniel/.npm/laravel-elixir-fingerprint/0.3.2/package /Users/daniel/.npm/bc8461d3-elixir-fingerprint-0-3-2-package.lock
+26 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+27 verbose lock tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz /Users/daniel/.npm/e0f2a91d-6253-0-29962149960920215-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry index.js
+34 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+35 silly lockFile bc8461d3-elixir-fingerprint-0-3-2-package tar:///Users/daniel/.npm/laravel-elixir-fingerprint/0.3.2/package
+36 silly lockFile bc8461d3-elixir-fingerprint-0-3-2-package tar:///Users/daniel/.npm/laravel-elixir-fingerprint/0.3.2/package
+37 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+38 silly lockFile e0f2a91d-6253-0-29962149960920215-tmp-tgz tar:///Users/daniel/tmp/npm-2743-5UpCIM2E/1423958886253-0.29962149960920215/tmp.tgz
+39 silly lockFile 0ee6c175- ./
+40 silly lockFile 0ee6c175- ./
+41 silly publish { name: 'laravel-elixir-fingerprint',
+41 silly publish   version: '0.3.2',
+41 silly publish   description: 'Laravel Elixir Fingerprint Extension',
+41 silly publish   main: 'index.js',
+41 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+41 silly publish   keywords:
+41 silly publish    [ 'laravel',
+41 silly publish      'elixir',
+41 silly publish      'manifest',
+41 silly publish      'version',
+41 silly publish      'fingerprint',
+41 silly publish      'gulp' ],
+41 silly publish   repository:
+41 silly publish    { type: 'git',
+41 silly publish      url: 'https://github.com/Torann/laravel-elixir-fingerprint' },
+41 silly publish   author: { name: 'Daniel Stainback' },
+41 silly publish   license: 'MIT',
+41 silly publish   homepage: 'https://github.com/Torann/laravel-elixir-fingerprint',
+41 silly publish   bugs: { url: 'https://github.com/Torann/laravel-elixir-fingerprint/issues' },
+41 silly publish   dependencies: { 'gulp-fingerprint': '^0.3.2' },
+41 silly publish   _id: 'laravel-elixir-fingerprint@0.3.2',
+41 silly publish   _shasum: '8af9a2567f163a75c3525df6d7b992d9f4165873',
+41 silly publish   _from: './',
+41 silly publish   _npmVersion: '1.4.9',
+41 silly publish   _npmUser: { name: 'torann', email: 'torann@gmail.com' },
+41 silly publish   maintainers: [ { name: 'torann', email: 'torann@gmail.com' } ],
+41 silly publish   dist:
+41 silly publish    { shasum: '8af9a2567f163a75c3525df6d7b992d9f4165873',
+41 silly publish      tarball: 'http://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz' },
+41 silly publish   directories: {},
+41 silly publish   _resolved: 'https://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz',
+41 silly publish   readme: 'ERROR: No README data found!' }
+42 verbose url raw laravel-elixir-fingerprint
+43 verbose url resolving [ 'https://registry.npmjs.org/',
+43 verbose url resolving   './laravel-elixir-fingerprint' ]
+44 verbose url resolved https://registry.npmjs.org/laravel-elixir-fingerprint
+45 info trying registry request attempt 1 at 19:08:06
+46 http PUT https://registry.npmjs.org/laravel-elixir-fingerprint
+47 http 403 https://registry.npmjs.org/laravel-elixir-fingerprint
+48 verbose headers { date: 'Sun, 15 Feb 2015 00:08:06 GMT',
+48 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'cache-control': 'max-age=60',
+48 verbose headers   'content-length': '2521',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'x-served-by': 'cache-atl6233-ATL',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1423958886.551823,VS0,VE81',
+48 verbose headers   'keep-alive': 'timeout=10, max=50',
+48 verbose headers   connection: 'Keep-Alive' }
+49 error publish Failed PUT 403
+50 error Error: forbidden cannot modify pre-existing version: 0.3.2
+50 error old={"name":"laravel-elixir-fingerprint","version":"0.3.2","description":"Laravel Elixir Fingerprint Extension","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["laravel","elixir","manifest","version","fingerprint","gulp"],"repository":{"type":"git","url":"https://github.com/Torann/laravel-elixir-fingerprint"},"author":{"name":"Daniel Stainback"},"license":"MIT","homepage":"https://github.com/Torann/laravel-elixir-fingerprint","bugs":{"url":"https://github.com/Torann/laravel-elixir-fingerprint/issues"},"dependencies":{},"devDependencies":{"gulp-fingerprint":"^0.3.2"},"_id":"laravel-elixir-fingerprint@0.3.2","_shasum":"8af9a2567f163a75c3525df6d7b992d9f4165873","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"torann","email":"torann@gmail.com"},"maintainers":[{"name":"torann","email":"torann@gmail.com"}],"dist":{"shasum":"8af9a2567f163a75c3525df6d7b992d9f4165873","tarball":"http://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz"}}
+50 error new={"name":"laravel-elixir-fingerprint","version":"0.3.2","description":"Laravel Elixir Fingerprint Extension","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["laravel","elixir","manifest","version","fingerprint","gulp"],"repository":{"type":"git","url":"https://github.com/Torann/laravel-elixir-fingerprint"},"author":{"name":"Daniel Stainback"},"license":"MIT","homepage":"https://github.com/Torann/laravel-elixir-fingerprint","bugs":{"url":"https://github.com/Torann/laravel-elixir-fingerprint/issues"},"dependencies":{"gulp-fingerprint":"^0.3.2"},"_id":"laravel-elixir-fingerprint@0.3.2","_shasum":"8af9a2567f163a75c3525df6d7b992d9f4165873","_from":"./","_npmVersion":"1.4.9","_npmUser":{"name":"torann","email":"torann@gmail.com"},"maintainers":[{"name":"torann","email":"torann@gmail.com"}],"dist":{"shasum":"5fa19ea8abb6b3d8d48d2bf09648d1bcd0922141","tarball":"http://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz"},"_resolved":"https://registry.npmjs.org/laravel-elixir-fingerprint/-/laravel-elixir-fingerprint-0.3.2.tgz","readme":"ERROR: No README data found!"}: laravel-elixir-fingerprint
+50 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+50 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+50 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+50 error     at Request.EventEmitter.emit (events.js:98:17)
+50 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+50 error     at Request.EventEmitter.emit (events.js:117:20)
+50 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+50 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+50 error     at _stream_readable.js:919:16
+50 error     at process._tickCallback (node.js:419:13)
+51 error If you need help, you may report this *entire* log,
+51 error including the npm and node versions, at:
+51 error     <http://github.com/npm/npm/issues>
+52 error System Darwin 14.1.0
+53 error command "node" "/usr/local/bin/npm" "publish" "./" "-f"
+54 error cwd /Users/daniel/Websites/Composer-Projects/NPM/laravel-elixir-fingerprint
+55 error node -v v0.10.28
+56 error npm -v 1.4.9
+57 verbose exit [ 1, true ]
