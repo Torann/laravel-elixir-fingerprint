@@ -18,13 +18,23 @@
     "type": "git",
     "url": "https://github.com/Torann/laravel-elixir-fingerprint"
   },
-  "author": "Daniel Stainback",
+  "author": {
+    "name": "Daniel Stainback"
+  },
   "license": "MIT",
   "homepage": "https://github.com/Torann/laravel-elixir-fingerprint",
   "bugs": {
     "url": "https://github.com/Torann/laravel-elixir-fingerprint/issues"
   },
   "dependencies": {
-    "gulp-fingerprint": "^0.3.2"
-  }
+    "gulp-fingerprint": "^0.3.2",
+    "merge-stream": "^0.1.7",
+    "underscore": "^1.8.3"
+  },
+  "readme": "# Laravel Elixir Fingerprint [![Build Status](https://travis-ci.org/vincentmac/gulp-fingerprint.svg?branch=master)](https://travis-ci.org/vincentmac/gulp-fingerprint)\n\n### Install\n\n```sh\n$ npm install laravel-elixir-fingerprint --save-dev\n```\n\n### Example\n\n```javascript\nvar elixir = require('laravel-elixir');\n\nrequire('laravel-elixir-fingerprint');\n\nelixir(function (mix) {\n    mix.fingerprint(\n        'public/build/css/*.css', \n        'public/build/css/'\n    );\n});\n```\n\nOur `rev-manifest.json` file:\n```json\n{\n  \"fonts/fontello.eot\": \"fonts/fontello-ee7f7979.eot\",\n  \"fonts/fontello.svg\": \"fonts/fontello-9cc6a21a.svg\",\n  \"fonts/fontello.ttf\": \"fonts/fontello-13276407.ttf\",\n  \"fonts/fontello.woff\": \"fonts/fontello-e25c919d.woff\"\n}\n```\n\nCSS Before Fingerprinting:\n```css\n@font-face {\n  font-family: 'fontello';\n  src: url(\"fonts/fontello.eot\");\n  src: url(\"fonts/fontello.eot\") format('embedded-opentype'),\n       url(\"fonts/fontello.woff\") format('woff'),\n       url(\"fonts/fontello.ttf\") format('truetype'),\n       url(\"fonts/fontello.svg\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n```\n\nCSS After Fingerprinting:\n```css\n@font-face {\n  font-family: 'fontello';\n  src: url(\"/build/fonts/fontello-ee7f7979.eot\");\n  src: url(\"/build/fonts/fontello-ee7f7979.eot\") format('embedded-opentype'),\n       url(\"/build/fonts/fontello-e25c919d.woff\") format('woff'),\n       url(\"/build/fonts/fontello-13276407.ttf\") format('truetype'),\n       url(\"/build/fonts/fontello-9cc6a21a.svg\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n```\n\nAs you can see, the after shows the font files replaced with the versioned ones in the `rev-manifest.json` file.\n\n\n### Full Documentation\n\n[https://github.com/vincentmac/gulp-fingerprint](https://github.com/vincentmac/gulp-fingerprint)\n\n\n## License\n\n[MIT](http://opensource.org/licenses/MIT) © [Vincent Mac](http://simplicity.io)\n",
+  "readmeFilename": "README.md",
+  "_id": "laravel-elixir-fingerprint@0.3.22",
+  "_shasum": "99d4693a9b421372ca6e360b2b0a35feb6de3bd1",
+  "_from": "laravel-elixir-fingerprint@*",
+  "devDependencies": {}
 }
