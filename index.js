@@ -1,54 +1,48 @@
-var gulp          = require('gulp'),
-    _             = require('underscore'),
-    merge         = require('merge-stream'),
-    fingerprint   = require('gulp-fingerprint'),
-    elixir        = require('laravel-elixir'),
-    utilities     = require('laravel-elixir/ingredients/commands/Utilities'),
-    notification  = require('laravel-elixir/ingredients/commands/Notification');
+var gulp = require('gulp'),
+    fingerprint = require('gulp-fingerprint'),
+    Elixir = require('laravel-elixir');
 
-elixir.extend('fingerprint', function(src, options) {
-    var config = this;
+var config = Elixir.config;
 
-    options = _.extend({
-        output: config.cssOutput,
-        base: '/',
-        prefix: '/build/',
-        manifest: '/public/build/rev-manifest.json'
-    }, options);
+Elixir.extend('fingerprint', function(src, options) {
 
-    var watchPath = options.manifest;
+    var paths = prepGulpPaths(src, options.output);
 
-    config.saveTask('fingerprint', {
-        src: utilities.prefixDirToFiles('public', src),
-        options: options
-    });
+    var manifestFile = (options.buildPath || config.get('public.versioning.buildFolder')) + '/rev-manifest.json';
 
-    gulp.task('fingerprint', function() {
-
-        var dataSet = config.collections['fingerprint'];
+    new Elixir.Task('fingerprint', function() {
+        this.log(paths.src, paths.output);
 
         var onError = function (e) {
-            new notification().error(e, 'Fingerprinting Failed!');
+            new Elixir.Notification(e, 'Fingerprinting Failed!');
             this.emit('end');
         };
 
-        return merge.apply(this, dataSet.map(function(data) {
+        var manifest = require(__dirname + '/../../' + manifestFile);
 
-            var options  = data.options,
-                manifest = require(__dirname + '/../..' + options.manifest);
-
-            return gulp.src(data.src)
-                .on('error', onError)
-                .pipe(fingerprint(manifest, {
-                    base: options.base,
-                    prefix: options.prefix
-                }))
-                .pipe(gulp.dest(options.output))
-                .pipe(new notification().message('Fingerprinting Compiled'));
-        }));
-    });
-
-    this.registerWatcher('fingerprint', watchPath);
-
-    return this.queueTask('fingerprint');
+        return gulp.src(paths.src.path)
+            .on('error', onError)
+            .pipe(fingerprint(manifest, {
+                base: options.base || '/',
+                prefix: options.prefix || '/build/'
+            }))
+            .pipe(gulp.dest(paths.output.baseDir))
+            .pipe(new Elixir.Notification('Fingerprinting Compiled'));
+    })
+    .watch(manifestFile);
 });
+
+/**
+ * Prep the Gulp src and output paths.
+ *
+ * @param  {string|array} src
+ * @param  {string|null}  buildPath
+ * @return {object}
+ */
+var prepGulpPaths = function(src, buildPath) {
+    src = Array.isArray(src) ? src : [src];
+
+    return new Elixir.GulpPaths()
+        .src(src)
+        .output(buildPath || config.get('public.versioning.buildFolder'));
+};

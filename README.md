@@ -6,6 +6,8 @@
 $ npm install laravel-elixir-fingerprint --save-dev
 ```
 
+> For Laravel Elixir 2 use version 0.3.3
+
 ### Example
 
 ```javascript
@@ -14,10 +16,11 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-fingerprint');
 
 elixir(function (mix) {
-    mix.fingerprint(
-        'public/build/css/*.css', 
-        'public/build/css/'
-    );
+        mix.fingerprint([
+            'public/build/css/*.css'
+        ], {
+            output: 'public/build/css/'
+        });
 });
 ```
 
