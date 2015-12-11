@@ -14,7 +14,7 @@ Elixir.extend('fingerprint', function(src, options) {
         this.log(paths.src, paths.output);
 
         var onError = function (e) {
-            new Elixir.Notification(e, 'Fingerprinting Failed!');
+            new Elixir.Notification().error(e, 'Fingerprinting Failed!');
             this.emit('end');
         };
 
